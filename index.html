@@ -53,7 +53,7 @@
        </p>
 
        <div class="img-wrap-box">
-          <img class="img-wrap" src="/images/scatter 500.png" alt="Scatter plot of NDSI against radial distance from center." />
+          <img class="img-wrap" src="images/scatter 500.png" alt="Scatter plot of NDSI against radial distance from center." />
 
         <p>
           We first tried to plot a scatter plot of the NDSI of a region against the radial distance of the region from the center of Antarctica. We declared regions in rings from the center, declaring new rings at fixed intervals. We did not like the way it looked and felt it did not convey enough on a month-to-month or week-to-week basis when making it interactive.
@@ -61,7 +61,7 @@
       </div>
 
       <div class="img-wrap-box">
-        <img class="img-wrap" src="/images/hist.png" alt="A histogram showing the percentage of snow coverage in Antarctica." />
+        <img class="img-wrap" src="images/hist.png" alt="A histogram showing the percentage of snow coverage in Antarctica." />
 
         <p>
           We then plotted a histogram showing the distribution of snow coverage by percentage in Antarctica. Again, we felt this plot did not convey enough information to be interesting. 
@@ -69,7 +69,7 @@
        </div>
 
        <div class="img-wrap-box">
-        <img class="img-wrap" src="/images/terra.png" alt="a color-coded map of Antarctica, where each color shows a bin in which ranges of NDSI have been classified." />
+        <img class="img-wrap" src="images/terra.png" alt="a color-coded map of Antarctica, where each color shows a bin in which ranges of NDSI have been classified." />
 
         <p>
           We then finally plotted a color-coded snow coverage map of Antarctica, with the colors showing degrees of snow coverage over the continent. 
@@ -85,7 +85,7 @@
         <p>Since the focus of the class is climate this year, we felt the last visualization was the most appropriate for the final presentation, not to mention it also had the potential to provide the most relevant information, especially when made interactive. Once we had chosen this as our final visualization, we explored some related plots to see what we could do.</p>
 
         <div class="img-wrap-box">
-          <img class="img-wrap" src="/images/heatmap.png" alt="a heat map showing the percentage difference of NDSI change of each box per month. The changes are binned in increments of 20% and then color coded." />
+          <img class="img-wrap" src="images/heatmap.png" alt="a heat map showing the percentage difference of NDSI change of each box per month. The changes are binned in increments of 20% and then color coded." />
           <p>Since we wanted to see how the snow coverage was changing during the first year of the pandemic, we decided instead of plotting the snow coverage itself, we could plot the difference of it per month to make it clearer to the viewer. A slider at the bottom let you choose the day of the year, since we are only looking at the first year of the pandemic. The idea was good, but with the current box sizes, it was not very informative.</p>
         </div>
         <p>Since we had chosen the map visualization, we realized we could overlay a 'heat map' on top of the actual map of Antarctica. We added the day slider to the visualization. However, we now noticed how loading times were too long. This map generated was 512x512 pixels, which is quite large to load for an interactive visualization, since each time the slider was updated, the visualization would be completely re-rendered.</p>
