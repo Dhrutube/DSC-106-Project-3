@@ -33,7 +33,7 @@ function populateDropdowns() {
 }
 
 async function loadData(){
-    const data = await d3.csv('all_months.csv', (row) => ({
+    const data = await d3.csv('visualization/all_months.csv', (row) => ({
         ...row,
         xpx: +row.x_px, // or just +row.line
         ypx: +row.y_px,
