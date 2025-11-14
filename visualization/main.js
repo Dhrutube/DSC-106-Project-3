@@ -104,11 +104,11 @@ function drawLegend(thresholds, colors) {
     .style("margin-bottom", "6px");
 
   const legendData = [
-    { color: colors[0], label: `< ${thresholds[0].toFixed(0)}` },
-    { color: colors[1], label: `${thresholds[0].toFixed(0)} – 0` },
-    { color: colors[2], label: `0` },
-    { color: colors[3], label: `${thresholds[2].toFixed(0)} – ${thresholds[3].toFixed(0)}` },
-    { color: colors[4], label: `> ${thresholds[2].toFixed(0)}` }
+    { color: colors[0], label: `< ${thresholds[0].toFixed(0)}%`},
+    { color: colors[1], label: `${thresholds[0].toFixed(0)} – 0%`},
+    { color: colors[2], label: `0%` },
+    { color: colors[3], label: `${thresholds[2].toFixed(0)} – ${thresholds[3].toFixed(0)}%` },
+    { color: colors[4], label: `> ${thresholds[2].toFixed(0)}%` }
   ];
 
   // Each legend row: flex container
@@ -225,7 +225,7 @@ function drawHeatmap(data, startMo = 1, endMo = 12, monthLabels = null) {
   // Change title if not default
   if (monthLabels) {
     const title = document.getElementById("heatmapTitle");
-    title.textContent = `Change in Mean NDSI by Antarctic region between ${monthLabels[startMo-1]} to ${monthLabels[endMo-1]}`;
+    title.textContent = `Change in Snow Coverage by Antarctica between ${monthLabels[startMo-1]} to ${monthLabels[endMo-1]}`;
   }
 
 }
